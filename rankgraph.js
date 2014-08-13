@@ -74,7 +74,7 @@ var RANKGRAPH = d3.json("rankgraph_data.json", function(error, json) {
     svg.selectAll("text")
         .attr("x", function(d) { return d.x; })
         .attr("y", function(d) { return d.y + 5; })
-        .attr("font-family", "sans")
+        .attr("font-family", "sans-serif")
         .text(function(d) { return d.label; });
 
     // Draw the lines
